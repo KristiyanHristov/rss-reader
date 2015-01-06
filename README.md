@@ -1,4 +1,4 @@
 rss-reader
 ==========
 
-RSS Reader
+RSS Reader - Learning BackboneJS
