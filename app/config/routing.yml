@@ -1,0 +1,4 @@
+rss_reader:
+    resource: "@RSSReaderBundle/Controller/"
+    type:     annotation
+    prefix:   /

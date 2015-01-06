@@ -1,0 +1,151 @@
+// Media queries breakpoints
+// --------------------------------------------------
+
+// Extra small screen / phone
+// Note: Deprecated $screen-xs and $screen-phone as of v3.0.1
+$screen-xs:                     480px !default;
+$screen-xs-min:                 $screen-xs !default;
+$screen-phone:                  $screen-xs-min !default;
+
+// Small screen / tablet
+// Note: Deprecated $screen-sm and $screen-tablet as of v3.0.1
+$screen-sm:                     800px !default;
+$screen-sm-min:                 $screen-sm !default;
+$screen-tablet:                 $screen-sm-min !default;
+
+// Medium screen / desktop
+// Note: Deprecated $screen-md and $screen-desktop as of v3.0.1
+$screen-md:                     1300px !default;
+$screen-md-min:                 $screen-md !default;
+$screen-desktop:                $screen-md-min !default;
+
+// Large screen / wide desktop
+// Note: Deprecated $screen-lg and $screen-lg-desktop as of v3.0.1
+$screen-lg:                     1300px !default;
+$screen-lg-min:                 $screen-lg !default;
+$screen-lg-desktop:             $screen-lg-min !default;
+
+// So media queries don't overlap when required, provide a maximum
+$screen-xs-max:                 ($screen-sm-min - 1) !default;
+$screen-sm-max:                 ($screen-md-min - 1) !default;
+$screen-md-max:                 ($screen-lg-min - 1) !default;
+
+
+// Grid system
+// --------------------------------------------------
+
+// Number of columns in the grid system
+$grid-columns:                  12 !default;
+// Padding, to be divided by two and applied to the left and right of all columns
+$grid-gutter-width:             30px !default;
+// Point at which the navbar stops collapsing
+$grid-float-breakpoint:         $screen-sm-min !default;
+
+
+// Container sizes
+// --------------------------------------------------
+
+// Small screen / tablet
+$container-tablet:                  100%;
+$container-sm:                      $container-tablet;
+
+// Medium screen / desktop
+$container-desktop:                 100%;
+$container-md:                      $container-desktop;
+
+// Large screen / wide desktop
+$container-large-desktop:           ((1170px + $grid-gutter-width));
+$container-lg:                      $container-large-desktop;
+
+
+// Navbar
+// --------------------------------------------------
+
+$navbar-height:                     58px;
+
+$navbar-default-bg:                 #fff;
+$navbar-default-border:             none;
+$navbar-default-link-color:         #fff;
+$navbar-default-link-hover-color:   #15e7e4;
+
+$navbar-inverse-bg:                 #0c2a38;
+$navbar-inverse-border:             none;
+$navbar-inverse-link-color:         #fff;
+$navbar-inverse-link-hover-color:   #15e7e4;
+
+$nav-pills-border-radius:           0;
+$nav-pills-active-link-hover-bg:    transparent;
+
+
+// Buttons
+// --------------------------------------------------
+
+$btn-default-bg:                #ccc8c8;
+$btn-default-color:             #fff;
+$btn-default-border:            #b5b1b1;
+
+$btn-primary-bg:                #1a416e;
+$btn-primary-color:             #fff;
+$btn-primary-border:            #143254;
+
+$btn-info-bg:                   #2C96AF;
+$btn-info-color:                #fff;
+$btn-info-border:               #298da3;
+
+$btn-danger-bg:                 #d94832;
+$btn-danger-color:              #fff;
+$btn-danger-border:             #bd3f2b;
+
+
+// Wells
+//--------------------------------------------------
+
+$well-bg:                       #f2f5f8;
+$well-border:                   $well-bg;
+
+
+// Typography
+//--------------------------------------------------
+
+$font-size-h1:                  38px;
+$font-size-h2:                  26px;
+$font-size-h3:                  18px;
+$font-size-h4:                  15px;
+$font-size-h5:                  14px;
+$font-size-h6:                  13px;
+
+
+// Form
+//--------------------------------------------------
+
+$input-border:                        #c6ccd2;
+$input-border-radius:                 6px;
+$input-border-radius-large:           6px;
+$input-border-radius-small:           6px;
+
+$input-group-addon-bg:                transparent;
+
+
+// Popover
+//--------------------------------------------------
+
+$popover-border-color:          $btn-primary-color;
+
+
+// Tabs
+//--------------------------------------------------
+
+$nav-tabs-border-color:                       #999;    
+$nav-tabs-link-hover-border-color:            #15e7e4;
+$nav-tabs-active-link-hover-bg:               none;
+$nav-tabs-active-link-hover-color:            #2c96af;
+$nav-tabs-active-link-hover-border-color:     #2c96af;
+
+
+// Dropdown Menus
+//--------------------------------------------------
+$dropdown-link-color:           #666;
+$dropdown-link-hover-bg:        #f1f7ff;
+  
+
+@import "bootstrap";
