@@ -1,0 +1,64 @@
+
+<a href="/">
+    <span class="logo">RSS Reader</span>
+</a>
+
+
+{% include 'RSSReaderBundle:Default:groupListTemplate.html.twig' %}
+{#{% include 'RSSReaderBundle:Default:feedListTemplate.html.twig' %}#}
+
+
+<div class="main-controls">
+    <button type="button" class="btn btn-success main-button" title="Add Group" data-toggle="modal" data-target="#AddGroup">
+        <span class="fa fa-th-list"></span>
+    </button>
+    
+    <button type="button" class="btn btn-success main-button" title="Add Feed" data-toggle="modal" data-target="#AddFeed">
+        <span class="fa fa-rss"></span>
+    </button>
+    
+    <button type="button" id="manageGroups" class="btn btn-default main-button" title="Manage Feeds" data-toggle="dropdown">
+        <span class="fa fa-cog"></span>
+    </button>
+</div>
+
+<div id="AddGroup" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Add Group</h4>
+            </div>
+            <div class="modal-body">
+                <label for="groupName">Group Name</label>
+                <input id="groupName" class="form-control" type="text">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" id="addGroup" class="btn btn-primary" data-dismiss="modal">Add Group</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="AddFeed" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Add News Feed</h4>
+            </div>
+            <div class="modal-body">
+                <label for="feedName">Feed Name</label>
+                <input id="feedName" class="form-control" type="text">
+                <label for="feedUrl">Feed Url</label>
+                <input id="feedUrl" class="form-control" placeholder="http://" type="url">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <input type="submit" id="addFeed" class="btn btn-primary" value="Add Feed">
+            </div>
+        </div>
+    </div>
+</div>
+

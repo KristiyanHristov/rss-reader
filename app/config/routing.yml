@@ -2,3 +2,7 @@ rss_reader:
     resource: "@RSSReaderBundle/Controller/"
     type:     annotation
     prefix:   /
+    
+group:
+    resource: RSSReaderBundle\Controller\GroupRestController
+    type:     rest

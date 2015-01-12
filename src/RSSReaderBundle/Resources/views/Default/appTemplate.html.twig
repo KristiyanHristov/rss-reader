@@ -1,0 +1,18 @@
+{% extends 'RSSReaderBundle:Default:layout.html.twig' %}
+
+{% block content %}
+        <div id="rss-reader">
+            <div id="main-sidebar" class="col-sm-4 col-md-3 col-lg-2">
+                {% include 'RSSReaderBundle:Default:sidebarTemplate.html.twig' %}
+            </div>
+
+            <div id="content" class="col-sm-8 col-md-9 col-lg-10">
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    {#{% include 'RSSReaderBundle:Default:articleListTemplate.html.twig' %}#}
+                </div>
+                <div class="col-sm-6 col-md-8 col-lg-9 article">
+                    {#{% include 'RSSReaderBundle:Default:articleTemplate.html.twig' %}#}
+                </div>
+            </div>
+        </div>
+{% endblock %}

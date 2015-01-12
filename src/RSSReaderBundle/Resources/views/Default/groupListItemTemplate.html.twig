@@ -1,0 +1,14 @@
+<script id="groupListItemView-template" type="text/template">
+    <span class="list-group-item feed-group">
+        <span class="badge">+</span>
+        <span class="title">
+            <%- item.get('title') %> 
+            <i class="fa fa-pencil"></i>
+        </span>
+        <button type="button" class="btn-delete pull-right" data-toggle="dropdown">
+            <span class="fa fa-trash-o"></span>
+        </button>
+        
+        <ul class="list-unstyled feed-list"></ul>
+    </span>
+</script>

@@ -1,0 +1,13 @@
+<script id="articleListItem-template" type="text/template">
+    <a href="#" class="list-group-item article-link" data-id="<%- item.get('url') %>">
+        <% if (item.get('thumbnail') != null) { %>
+            <img src="<%- item.get('thumbnail') %>" alt="..." class="pull-right">
+        <% } %>
+        <% if (item.get('read') == false) { %>
+            <span class="fa fa-eye-slash"></span>
+        <% } %>
+        <span class="list-group-item-heading">
+            <%- item.get('title') %>
+        </span>
+    </a>
+</script>

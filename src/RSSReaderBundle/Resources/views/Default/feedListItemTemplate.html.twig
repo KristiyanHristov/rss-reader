@@ -1,0 +1,9 @@
+<script id="feedListItem-template" type="text/template">
+    <div class="list-group-item feed">
+        <span class="fa fa-rss"></span>
+        <span class="badge"><%- item.get('unread') %></span><%- item.get('title') %>
+        <button type="button" class="btn-delete pull-right" data-toggle="dropdown">
+            <span class="fa fa-trash-o"></span>
+        </button>
+    </div>
+</script>

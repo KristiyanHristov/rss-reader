@@ -1,0 +1,15 @@
+<script id="article-template" type="text/template">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <a href="<%- item.get('url') %>">
+                <h4>
+                    <%- item.get('title') %>
+                </h4>
+            </a>
+            <%- item.get('date') %>
+        </div>
+        <div class="panel-body">
+            <%= item.get('content') %>
+        </div>
+    </div>
+</script>

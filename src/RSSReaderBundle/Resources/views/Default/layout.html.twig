@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
-    <link href="{{ asset('bundles/rssreader/css/compiled/bootstrap.style.css') }}" rel="stylesheet" type="text/css"/>
-    <link href="{{ asset('bundles/rssreader/css/compiled/style.css') }}" rel="stylesheet" type="text/css"/>
+    <link href="{{ asset('bundles/rssreader/css/bootstrap.css') }}" rel="stylesheet" type="text/css"/>
+    <link href="{{ asset('bundles/rssreader/css/font-awesome.css') }}" rel="stylesheet" type="text/css"/>
+    <link href="{{ asset('bundles/rssreader/css/style.css') }}" rel="stylesheet" type="text/css"/>
 </head>
 <body>
     {% block content %}{% endblock %}
@@ -17,6 +18,10 @@
         '@RSSReaderBundle/Resources/public/js/bootstrap-sass/assets/javascripts/bootstrap.js'
         '@RSSReaderBundle/Resources/public/js/underscore/underscore.js'
         '@RSSReaderBundle/Resources/public/js/backbone/backbone.js'
+        '@RSSReaderBundle/Resources/public/js/backbone-relational.js'
+        '@RSSReaderBundle/Resources/public/js/models/*'
+        '@RSSReaderBundle/Resources/public/js/collections/*'
+        '@RSSReaderBundle/Resources/public/js/views/*'
         '@RSSReaderBundle/Resources/public/js/*'
         %}
         <script type="text/javascript" src="{{ asset_url }}"></script>
